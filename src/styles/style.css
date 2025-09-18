@@ -1,13 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #0b0c10;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
+  font-family: Arial, sans-serif;
+  background: url('fundo_campo.jpeg') no-repeat center center fixed;
+  background-size: cover; /* cobre a tela toda */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ 
   .quiz-container {
     background: #1f2833;
     padding: 20px;
