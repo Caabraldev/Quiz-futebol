@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: url('fundo_campo.jpeg') no-repeat center center fixed;
+  background: url('../../img/fundo_campo.jpeg') no-repeat center center fixed;
   background-size: cover; /* cobre a tela toda */
   color: #fff;
   display: flex;
