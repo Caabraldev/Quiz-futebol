@@ -5,16 +5,16 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/index.html"
+      "destination": "/pages/index.html"
     },
     {
       "source": "/sobre",
-      "destination": "/sobre.html"
+      "destination": "/pages/sobre.html"
     }
   ],
   "headers": [
     {
-      "source": "/img/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
