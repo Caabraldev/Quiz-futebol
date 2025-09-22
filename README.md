@@ -84,5 +84,6 @@ module.exports = (app) => {
 - Porta ocupada: altere a porta do Vite com `--port` ou a da API com `PORT=3002`.
 
 Pronto! Para criar, basta adicionar arquivos em `pages/` e `server/routes/` e usar `npm run dev`.
+s
 # Quiz-futebol
 # Quiz-Futebols
