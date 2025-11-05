@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
-  <title>Fut Legend </title>
+  <title>Fut Legend</title>
   <link rel="stylesheet" href="/src/styles/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/src/scripts/questions.js" type="module" defer></script> 
+  <script src="/src/scripts/questions.js" type="module" defer></script>
   <link rel="icon" type="image/png" href="/img/fivicon3.png">
 </head>
 
 <body>
-  <div class="quiz-container">
-    <h1> Fut Legend ⚽ </h1>
-    <div id="quiz-box"> 
-      <div class="timer">Tempo: <span id="timer">12</span>s</div>
-      <h2 id="question">Carregando pergunta...</h2>
-      <div id="options">
-        
-      </div>
-      <p id="result"></p>
-      <button id="restart-btn" onclick="location.reload()" style="display:none;">Reiniciar Quiz</button>
+  <!-- ==== TELA INICIAL ==== -->
+  <div id="startBox" class="start-box">
+    <h2>⚽ Bem-vindo ao <span>Fut Legend</span>!</h2>
+    <p>Digite seu nome para começar:</p>
+    <input type="text" id="playerName" placeholder="Seu nome">
+    <button id="startBtn">Iniciar Quiz</button>
   </div>
-</body>
 
-</html>
-<footer>
-  <p>© 2025 Lucas Cabral & Guilherme Tavares. Todos os direitos reservados.</p>
-  <div class="links">
-    <a href="https://github.com/Caabraldev" target="_blank" class="github-link">
-      <img src="/img/github.png" alt="GitHub Lucas Cabral" class="icon"> Lucas Cabral
-    </a>
-    <a href="https://github.com/Gui-94" target="_blank" class="github-link">
-      <img src="/img/github.png" alt="GitHub Guilherme Tavares" class="icon"> Guilherme Tavares
-    </a>
+  <div id="quiz-container" style="display:none;">
+    <div class="quiz-container">
+      <h1>Fut Legend ⚽</h1>
+      <div id="quiz-box">
+        <div class="timer">Tempo: <span id="timer">12</span>s</div>
+        <h2 id="question">Carregando pergunta...</h2>
+        <div id="options"></div>
+        <p id="result"></p>
+        <button id="restart-btn" onclick="location.reload()" style="display:none;">Reiniciar Quiz</button>
+      </div>
+    </div>
   </div>
-</footer>
+
+  <!-- ==== RANKING ==== -->
+  <div id="rankingBox" class="ranking-box" style="display:none;">
+    <h2>🏆 Ranking Fut Legend</h2>
+    <table id="rankingTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Jogador</th>
+          <th>Acertos</th>
+          <th>Tempo (s)</th>
+          <th>Pontos</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="backBtn">Voltar</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Lucas Cabral & Guilherme Tavares. Todos os direitos reservados.</p>
+    <div class="links">
+      <a href="https://github.com/Caabraldev" target="_blank" class="github-link">
+        <img src="/img/github.png" alt="GitHub Lucas Cabral" class="icon"> Lucas Cabral
+      </a>
+      <a href="https://github.com/Gui-94" target="_blank" class="github-link">
+        <img src="/img/github.png" alt="GitHub Guilherme Tavares" class="icon"> Guilherme Tavares
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
