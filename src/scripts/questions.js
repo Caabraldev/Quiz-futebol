@@ -385,7 +385,7 @@ $(document).ready(function () {
     { q: "Qual é o estádio do Coritiba?", opts: ["Couto Pereira", "Arena da Baixada", "Durival Britto"], ans: "Couto Pereira" },
     { q: "Quem é o técnico do Palmeiras em 2025?", opts: ["Abel Ferreira", "Fernando Diniz", "Tite"], ans: "Abel Ferreira" },
     { q: "Quem é o técnico do Fluminense em 2025?", opts: ["Fernando Diniz", "Cuca", "Dorival Júnior"], ans: "Fernando Diniz" },
-    { q: "Quem é o técnico do Flamengo em 2025?", opts: ["Tite", "Ceni", "Dorival Júnior"], ans: "Tite" },
+    { q: "Quem é o técnico do Flamengo em 2025?", opts: ["Felipe L.", "Ceni", "Dorival Júnior"], ans: "Felipe L." },
     { q: "Quem é o técnico do Corinthians em 2025?", opts: ["António Oliveira", "Luxemburgo", "Sylvinho"], ans: "António Oliveira" },
     { q: "Quem é o técnico do Vasco em 2025?", opts: ["Rafael Paiva", "Zé Ricardo", "Ramon Díaz"], ans: "Rafael Paiva" },
     { q: "Quem é o técnico do São Paulo em 2025?", opts: ["Thiago Carpini", "Dorival Júnior", "Rogério Ceni"], ans: "Thiago Carpini" },

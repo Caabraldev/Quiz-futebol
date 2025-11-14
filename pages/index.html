@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Fut Legend </title>
-  <link rel="stylesheet" href="/src/styles/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/src/scripts/questions.js" type="module" defer></script> 
-  <link rel="icon" type="image/png" href="/img/fivicon3.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fut Legend</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" crossorigin src="/assets/index-C_mAqnAL.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/style-DMTEbZVK.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-B6mTA8Df.css">
 </head>
-
 <body>
-  <div class="quiz-container">
-    <h1> Fut Legend ⚽ </h1>
-    <div id="quiz-box"> 
-      <div class="timer">Tempo: <span id="timer">12</span>s</div>
-      <h2 id="question">Carregando pergunta...</h2>
-      <div id="options">
-        
-      </div>
-      <p id="result"></p>
-      <button id="restart-btn" onclick="location.reload()" style="display:none;">Reiniciar Quiz</button>
-  </div>
-</body>
+  <div class="container-login">
+    <h1>Fut Legend</h1>
 
-</html>
-<footer>
-  <p>© 2025 Lucas Cabral & Guilherme Tavares. Todos os direitos reservados.</p>
-  <div class="links">
-    <a href="https://github.com/Caabraldev" target="_blank" class="github-link">
-      <img src="/img/github.png" alt="GitHub Lucas Cabral" class="icon"> Lucas Cabral
-    </a>
-    <a href="https://github.com/Gui-94" target="_blank" class="github-link">
-      <img src="/img/github.png" alt="GitHub Guilherme Tavares" class="icon"> Guilherme Tavares
-    </a>
+    <!-- Login -->
+    <form id="loginForm">
+      <h2>Entrar</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="senha" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Cadastro -->
+    <form id="registerForm" style="display:none;">
+      <h2>Criar Conta</h2>
+      <input type="email" id="newEmail" placeholder="Novo email" required />
+      <input type="password" id="newSenha" placeholder="Nova senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <button id="toggleForm">Criar uma conta</button>
   </div>
-</footer>
+
+  <script type="module" src="/src/scripts/login.js"></script>
+</body>
+</html>
